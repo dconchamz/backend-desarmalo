@@ -1,5 +1,5 @@
-const usedVehicleController = require('./used-vehicle');
+const itemController = require('./item');
 
 module.exports = {
-  usedVehicleController,
+  itemController,
 };

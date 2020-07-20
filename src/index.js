@@ -7,9 +7,7 @@ const morgan = require('morgan');
 const routes = require('./routes');
 
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Welcome to a basic express App');
-});
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use(

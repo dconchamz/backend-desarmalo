@@ -1,10 +1,11 @@
 const { validationResult } = require('express-validator');
+const Sequelize = require('sequelize');
 const {
   osec_t_item: osecItem,
   osec_t_item_description: osecItemDescription,
 } = require('../services/sequelize');
 
-async function getUsedVehicles(req, res) {
+async function getItemById(req, res) {
   //validamos el request como parametro de la URL
   const errors = validationResult(req);
 
@@ -67,5 +68,5 @@ async function getUsedVehicles(req, res) {
 }
 
 module.exports = {
-  getUsedVehicles,
+  getItemById,
 };

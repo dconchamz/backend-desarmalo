@@ -1,7 +1,7 @@
-const VehicleRoutes = require('./used-vehicle');
+const itemRoutes = require('./item');
 
 const apiV1 = '/v1';
 
 module.exports = (app) => {
-  app.use(`${apiV1}/used-vehicle`, VehicleRoutes);
+  app.use(`${apiV1}`, itemRoutes);
 };
